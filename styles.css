@@ -448,6 +448,14 @@ p  { margin: 0 0 1em; }
 .fr-split__body h2 { margin-bottom: 16px; }
 .fr-split__body p { color: var(--fr-ink-soft); }
 
+/* Reusable button row — flex row that wraps on mobile */
+.fr-btn-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
 /* ---------- Dish cards (home featured) ---------- */
 .fr-dishes {
   display: grid;
@@ -757,6 +765,17 @@ p  { margin: 0 0 1em; }
   .fr-split { grid-template-columns: 1fr; gap: 36px; }
   .fr-split--reverse .fr-split__media { order: 0; }
   .fr-split__media { aspect-ratio: 16 / 10; }
+  /* Duo image pair: unset fixed height so both images show fully */
+  .fr-split__media--duo {
+    aspect-ratio: unset;
+    height: auto;
+    grid-template-rows: auto auto;
+  }
+  .fr-split__media--duo img {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    height: auto;
+  }
   .fr-contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .fr-footer__inner { grid-template-columns: 1fr 1fr; gap: 28px; }
   .fr-section { padding: 64px 20px; }
@@ -826,6 +845,7 @@ p  { margin: 0 0 1em; }
   /* Buttons full-ish width */
   .fr-btn { padding: 14px 22px; }
   .fr-cta-band .fr-btn { width: 100%; max-width: 320px; }
+  .fr-btn-row .fr-btn { flex: 1 1 auto; text-align: center; justify-content: center; }
 
   /* Features → 2 col */
   .fr-features { grid-template-columns: 1fr 1fr; gap: 14px; }
