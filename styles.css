@@ -451,7 +451,7 @@ p  { margin: 0 0 1em; }
 /* Reusable button row — flex row that wraps on mobile */
 .fr-btn-row {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
   margin-top: 28px;
 }
@@ -765,16 +765,19 @@ p  { margin: 0 0 1em; }
   .fr-split { grid-template-columns: 1fr; gap: 36px; }
   .fr-split--reverse .fr-split__media { order: 0; }
   .fr-split__media { aspect-ratio: 16 / 10; }
-  /* Duo image pair: unset fixed height so both images show fully */
+  /* Duo image pair: remove all height constraints so both images show fully */
   .fr-split__media--duo {
     aspect-ratio: unset;
     height: auto;
     grid-template-rows: auto auto;
+    contain: none;
+    overflow: visible;
   }
   .fr-split__media--duo img {
     aspect-ratio: 4 / 3;
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   .fr-contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .fr-footer__inner { grid-template-columns: 1fr 1fr; gap: 28px; }
@@ -845,7 +848,8 @@ p  { margin: 0 0 1em; }
   /* Buttons full-ish width */
   .fr-btn { padding: 14px 22px; }
   .fr-cta-band .fr-btn { width: 100%; max-width: 320px; }
-  .fr-btn-row .fr-btn { flex: 1 1 auto; text-align: center; justify-content: center; }
+  .fr-btn-row { gap: 12px; }
+  .fr-btn-row .fr-btn { width: 100%; text-align: center; justify-content: center; }
 
   /* Features → 2 col */
   .fr-features { grid-template-columns: 1fr 1fr; gap: 14px; }
