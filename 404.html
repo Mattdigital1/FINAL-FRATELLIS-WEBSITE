@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page Not Found · Fratelli's Italian Grille</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<script src="nav.js" defer></script>
+<style>
+  .fr-404 {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+  }
+  .fr-404__num {
+    font-family: var(--fr-serif);
+    font-size: clamp(80px, 18vw, 160px);
+    color: var(--fr-wine);
+    line-height: 1;
+    margin: 0 0 8px;
+    opacity: .18;
+  }
+  .fr-404__script {
+    font-family: var(--fr-script);
+    font-size: clamp(28px, 6vw, 48px);
+    color: var(--fr-gold);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .fr-404 h1 {
+    font-size: clamp(22px, 4vw, 32px);
+    margin: 0 0 16px;
+  }
+  .fr-404 p {
+    color: var(--fr-ink-soft);
+    max-width: 440px;
+    margin: 0 auto 36px;
+  }
+</style>
+</head>
+<body>
+
+<header class="fr-header">
+  <div class="fr-header__inner">
+    <a class="fr-logo" href="index.html">
+      <span class="fr-logo__name">Fratelli's</span>
+      <span class="fr-logo__tag">Italian Grille</span>
+    </a>
+    <button class="fr-nav__toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="fr-nav" id="fr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="from-the-bar.html">From the Bar</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="fr-nav__cta">Reserve · (985) 707-1688</a>
+    </nav>
+  </div>
+</header>
+
+<div class="fr-404">
+  <div class="fr-404__num">404</div>
+  <span class="fr-404__script">Mamma mia!</span>
+  <h1>This page wandered off.</h1>
+  <p>Looks like the page you're looking for doesn't exist. Head back to the homepage and we'll get you sorted.</p>
+  <a href="index.html" class="fr-btn">Back to Home</a>
+</div>
+
+<footer class="fr-footer">
+  <div class="fr-footer__inner">
+    <div class="fr-footer__brand">
+      <a class="fr-logo" href="index.html">
+        <span class="fr-logo__name" style="color:#fff">Fratelli's</span>
+        <span class="fr-logo__tag">Italian Grille</span>
+      </a>
+      <p>Authentic Italian dining in Slidell, Louisiana since 2017. Family owned. Always fresh.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://maps.google.com/?q=550+Gause+Blvd,+Slidell,+LA+70458" target="_blank" rel="noopener">550 Gause Blvd, Suite 1<br>Slidell, LA 70458</a><br>
+      <a href="tel:1-985-707-1688">(985) 707-1688</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Closed Monday</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Tue–Thu · 11am–9pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Fri–Sat · 11am–10pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Sunday · 11am–9pm</span>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="menu.html">Full Menu</a><br>
+      <a href="from-the-bar.html">Wine &amp; Cocktails</a><br>
+      <a href="testimonials.html">Reviews</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="fr-footer__bottom">
+    © 2026 Fratelli's Italian Grille · Slidell, Louisiana · Locally owned and operated
+  </div>
+</footer>
+
+</body>
+</html>
