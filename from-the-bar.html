@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>From the Bar · Wine &amp; Cocktails · Fratelli's Italian Grille</title>
+<meta name="description" content="Fratelli's extensive wine list — Italian reds, Tuscan classics, Napa Cabernets — plus specialty cocktails like the Limoncello martini and a full beer selection." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<script src="nav.js" defer></script>
+<style>
+  .fr-wine-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px 48px; }
+  .fr-wine-group { margin-bottom: 42px; }
+  .fr-wine-group > h3 {
+    font-family: var(--fr-serif);
+    font-size: 24px;
+    color: var(--fr-wine);
+    border-bottom: 1px solid var(--fr-line);
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px;
+  }
+  .fr-wine-group > h3 small {
+    font-family: var(--fr-sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--fr-gold); font-weight: 700;
+  }
+  .fr-wine-note { font-size: 14px; color: var(--fr-ink-soft); font-style: italic; margin: 0 0 14px; }
+  .fr-wine-row {
+    display: grid; grid-template-columns: 1fr auto auto;
+    gap: 14px; align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--fr-line);
+  }
+  .fr-wine-row__name { font-family: var(--fr-serif); font-weight: 700; font-size: 17px; color: var(--fr-ink); }
+  .fr-wine-row__price { font-family: var(--fr-serif); font-weight: 700; color: var(--fr-wine); font-size: 15px; min-width: 50px; text-align: right; }
+  .fr-wine-row__desc { display: block; color: var(--fr-ink-soft); font-size: 13.5px; font-style: italic; margin-top: 2px; }
+  .fr-wine-row__prices { display: flex; gap: 16px; align-items: baseline; }
+  .fr-wine-row__prices span { font-family: var(--fr-serif); color: var(--fr-wine); font-weight: 700; font-size: 15px; }
+  .fr-wine-row__prices em { font-family: var(--fr-sans); font-style: normal; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--fr-ink-soft); display:block; font-weight:600; }
+  .fr-cocktails {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
+  }
+  .fr-cocktail {
+    background: #fff; border: 1px solid var(--fr-line); border-radius: var(--fr-radius); padding: 22px;
+    display: flex; flex-direction: column; box-shadow: var(--fr-shadow);
+  }
+  .fr-cocktail h4 { margin: 0 0 6px; font-size: 20px; color: var(--fr-wine); font-family: var(--fr-serif); display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .fr-cocktail h4 span { color: var(--fr-gold); font-size: 16px; font-weight: 700; }
+  .fr-cocktail p { margin: 0; font-size: 14px; color: var(--fr-ink-soft); font-style: italic; }
+  .fr-beer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .fr-beer { background:#fff; border:1px solid var(--fr-line); border-radius: var(--fr-radius); padding: 24px; box-shadow: var(--fr-shadow); }
+  .fr-beer h4 { margin-top: 0; font-size: 20px; display: flex; justify-content: space-between; align-items: baseline; }
+  .fr-beer h4 span { color: var(--fr-gold); font-family: var(--fr-serif); }
+  .fr-beer ul { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 20px; font-size: 14.5px; color: var(--fr-ink); }
+  .fr-beer ul li { padding: 3px 0; break-inside: avoid; }
+  @media (max-width: 640px) {
+    .fr-wine-row { grid-template-columns: 1fr auto; }
+    .fr-beer-grid { grid-template-columns: 1fr; }
+    .fr-beer ul { columns: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header class="fr-header">
+  <div class="fr-header__inner">
+    <a class="fr-logo" href="index.html">
+      <span class="fr-logo__name">Fratelli's</span>
+      <span class="fr-logo__tag">Italian Grille</span>
+    </a>
+    <button class="fr-nav__toggle" aria-label="Toggle menu" onclick="document.getElementById('fr-nav').classList.toggle('is-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="fr-nav" id="fr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="from-the-bar.html" class="is-active">From the Bar</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="fr-nav__cta">Reserve · (985) 707-1688</a>
+    </nav>
+  </div>
+</header>
+
+<section class="fr-pagehead">
+  <span class="fr-hero__script">Dal bar</span>
+  <h1>From the Bar</h1>
+  <p>An extensive, thoughtfully curated wine list, classic cocktails, and cold beer. Wine selections change daily — ask about a specific bottle you love if you don't see it listed.</p>
+</section>
+
+<section class="fr-section">
+  <div class="fr-container">
+
+    <div class="fr-section__head">
+      <span class="fr-eyebrow">Vino</span>
+      <h2>Wine List</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <p>Prices listed as <em>Glass / Bottle</em>. Bold bottles are featured selections.</p>
+    </div>
+
+    <!-- HOUSE -->
+    <div class="fr-wine-group">
+      <h3>House Wines <small>Glass · Bottle</small></h3>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row">
+            <div>
+              <div class="fr-wine-row__name">Canyon Road</div>
+              <span class="fr-wine-row__desc">Cabernet, Chardonnay, Merlot, Pinot Noir, Pinot Grigio, Sauvignon Blanc, White Zinfandel, Moscato</span>
+            </div>
+            <div class="fr-wine-row__prices"><span>$6.50</span><span>$24</span></div>
+          </div>
+          <div class="fr-wine-row">
+            <div><div class="fr-wine-row__name">Voga, Moscato</div></div>
+            <div class="fr-wine-row__prices"><span>$7.50</span><span>$26</span></div>
+          </div>
+          <div class="fr-wine-row">
+            <div><div class="fr-wine-row__name">Banfi Chianti Superiore</div></div>
+            <div class="fr-wine-row__prices"><span>$7.50</span><span>$30</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPARKLING -->
+    <div class="fr-wine-group">
+      <h3>Sparkling &amp; Rosé <small>Glass · Bottle</small></h3>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Freixenet Brut 187 mL</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>—</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Lamberti Prosecco</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">La Marca Prosecco</div></div><div class="fr-wine-row__prices"><span>$8.00</span><span>$30</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Mia Dolcea Moscato d'Asti</div></div><div class="fr-wine-row__prices"><span>$9.00</span><span>$30</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Gloria Ferrer Brut</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Gérard Bertrand Rosé Crémant</div></div><div class="fr-wine-row__prices"><span>—</span><span>$48</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHARDONNAY -->
+    <div class="fr-wine-group">
+      <h3>Chardonnay <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Full-bodied whites with rich apple, citrus, and tropical fruit aromas.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">20 Gauge, California</div></div><div class="fr-wine-row__prices"><span>$8</span><span>$30</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Frei Brothers, Russian River</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Charles Krug, Napa Valley</div></div><div class="fr-wine-row__prices"><span>$11</span><span>$40</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">La Crema, Sonoma Coast</div></div><div class="fr-wine-row__prices"><span>—</span><span>$38</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Twenty Rows, Napa Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Rombauer, Carneros</div></div><div class="fr-wine-row__prices"><span>—</span><span>$65</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAUVIGNON BLANC -->
+    <div class="fr-wine-group">
+      <h3>Sauvignon Blanc <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Enticing aromas of passion fruit, lime, and lemongrass with melon, citrus, and grapefruit flavors.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Dry Creek Sonoma Co. Fumé Blanc</div></div><div class="fr-wine-row__prices"><span>$8</span><span>$30</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Girard, Napa Valley</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Rombauer, Napa Valley</div></div><div class="fr-wine-row__prices"><span>$14</span><span>$42</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERESTING WHITES -->
+    <div class="fr-wine-group">
+      <h3>Interesting Whites <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Dry to semi-sweet with fruity and floral aromas.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">North by Northwest Riesling, Horse Heaven Hills</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$26</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Dry Creek Chenin Blanc</div></div><div class="fr-wine-row__prices"><span>$8.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Rudi Wiest Dry Riesling</div></div><div class="fr-wine-row__prices"><span>$8</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Mönchhof Estate Riesling</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MERLOT -->
+    <div class="fr-wine-group">
+      <h3>Merlot <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Soft and supple with plum and blackberry; sometimes mint, chocolate, and eucalyptus.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ca' Momi, Napa Valley</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Alexander Valley, California</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Charles Krug, Napa Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$40</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CABERNET SAUVIGNON -->
+    <div class="fr-wine-group">
+      <h3>Cabernet Sauvignon <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Complex, rich, ripe and fruity with blackberry, spice, and a touch of earthiness.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Jam Cellars, California</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Joel Gott, California</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$38</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">B Side, North Coast</div></div><div class="fr-wine-row__prices"><span>$11</span><span>$38</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">North by Northwest, Columbia Valley</div></div><div class="fr-wine-row__prices"><span>$12</span><span>$40</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Twenty Rows, North Coast</div></div><div class="fr-wine-row__prices"><span>$15</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Dry Creek, Sonoma Coast</div></div><div class="fr-wine-row__prices"><span>—</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Justin Vineyards, Paso Robles</div></div><div class="fr-wine-row__prices"><span>—</span><span>$48</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Louis Martini</div></div><div class="fr-wine-row__prices"><span>—</span><span>$50</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ferrari-Carano, Alexander Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$50</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Faust, Napa Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$75</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Rapture, California</div></div><div class="fr-wine-row__prices"><span>—</span><span>$80</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Groth Vineyards, Oakville</div></div><div class="fr-wine-row__prices"><span>—</span><span>$80</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Stag's Leap, Napa Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$85</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Caymus, Napa Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$125</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PINOT NOIR -->
+    <div class="fr-wine-group">
+      <h3>Pinot Noir <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Fruit-forward — hints of black cherry, berries, currant, and plum.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Stemmari, Sicily</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Landmark Overlook, California</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">MacMurray, Central Coast</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">La Crema, Sonoma Coast</div></div><div class="fr-wine-row__prices"><span>$10.50</span><span>$38</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Diora La Petite Grâce, Central Coast</div></div><div class="fr-wine-row__prices"><span>$11</span><span>$40</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ghost Pines Winemaker, California</div></div><div class="fr-wine-row__prices"><span>—</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Frei Brothers, Russian River</div></div><div class="fr-wine-row__prices"><span>—</span><span>$48</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Amici, Russian River</div></div><div class="fr-wine-row__prices"><span>—</span><span>$50</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">King Estate, Willamette Valley</div></div><div class="fr-wine-row__prices"><span>—</span><span>$50</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MALBEC -->
+    <div class="fr-wine-group">
+      <h3>Malbec <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Dark fruits like blackberry, plum, and black cherry with hints of cocoa and leather.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Antigal Uno, Mendoza</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Gascón Reserva, Mendoza</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">El Esteco Don David Reserve, Salta</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZINFANDEL -->
+    <div class="fr-wine-group">
+      <h3>Zinfandel <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Fruit-forward with raspberry, blueberry, cranberry jam — hints of black pepper, tobacco, and vanilla.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Pedroncelli Mother Clone, Dry Creek</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Dry Creek Heritage Vines, California</div></div><div class="fr-wine-row__prices"><span>$12</span><span>$40</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Earthquake Zinfandel, California</div></div><div class="fr-wine-row__prices"><span>—</span><span>$60</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERESTING REDS -->
+    <div class="fr-wine-group">
+      <h3>Interesting Reds <small>Glass · Bottle</small></h3>
+      <p class="fr-wine-note">Full-bodied blends with dark, jammy fruit flavors.</p>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Apothic, California (Zin/Merlot)</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Las Rocas, Spain (Garnacha/Tempranillo)</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Saved, California (Merlot/Malbec)</div></div><div class="fr-wine-row__prices"><span>$11</span><span>$40</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ghost Pines (Zin/Cab), California</div></div><div class="fr-wine-row__prices"><span>—</span><span>$48</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Leviathan, Napa (Cab/Syrah)</div></div><div class="fr-wine-row__prices"><span>—</span><span>$55</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">The Prisoner, Napa Valley (Zin/Cab)</div></div><div class="fr-wine-row__prices"><span>—</span><span>$70</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITALY -->
+    <div class="fr-wine-group">
+      <h3>Italy — Whites <small>Glass · Bottle</small></h3>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Cadonini Pinot Grigio</div></div><div class="fr-wine-row__prices"><span>$6.50</span><span>$24</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Stemmari Pinot Grigio, Sicily</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Maso Canali Pinot Grigio, Trentino</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">DaVinci Pinot Grigio, Trentino-Alto Adige</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Santa Margherita Pinot Grigio</div></div><div class="fr-wine-row__prices"><span>—</span><span>$45</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fr-wine-group">
+      <h3>Italy — Reds <small>Glass · Bottle</small></h3>
+      <div class="fr-wine-grid">
+        <div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Frescobaldi Remole, Toscana</div></div><div class="fr-wine-row__prices"><span>$7.50</span><span>$28</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">DaVinci Chianti</div></div><div class="fr-wine-row__prices"><span>$9</span><span>$34</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Paolo Scavino Rosso, Piedmont</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Castello Sonnino Riserva Chianti, Montespertoli</div></div><div class="fr-wine-row__prices"><span>$10</span><span>$35</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Argiano Non Confunditur, Toscana Rosso</div></div><div class="fr-wine-row__prices"><span>$13</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ruffino Riserva Ducale Chianti</div></div><div class="fr-wine-row__prices"><span>$13</span><span>$45</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Frescobaldi Nipozzano, Toscana</div></div><div class="fr-wine-row__prices"><span>—</span><span>$50</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Ruffino Riserva Ducale Oro Chianti</div></div><div class="fr-wine-row__prices"><span>—</span><span>$60</span></div></div>
+          <div class="fr-wine-row"><div><div class="fr-wine-row__name">Pasqua Veneto Amarone</div></div><div class="fr-wine-row__prices"><span>—</span><span>$60</span></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COCKTAILS & BEER -->
+<section class="fr-section fr-section--alt">
+  <div class="fr-container">
+
+    <div class="fr-section__head">
+      <span class="fr-eyebrow">Specialty Cocktails</span>
+      <h2>From the Shaker</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <p>Ask your server about other specialty drinks we're pouring tonight.</p>
+    </div>
+
+    <div class="fr-cocktails">
+      <div class="fr-cocktail"><h4>Italian Margarita <span>$9.50</span></h4><p>Tequila, amaretto, triple sec.</p></div>
+      <div class="fr-cocktail"><h4>Margarita <span>$6.50</span></h4><p>Regular or strawberry — sweet and sour, tequila, triple sec.</p></div>
+      <div class="fr-cocktail"><h4>Bellini <span>$8.50</span></h4><p>Sparkling wine, peach purée, vodka.</p></div>
+      <div class="fr-cocktail"><h4>Cosmopolitan <span>$8.50</span></h4><p>Vodka, cranberry juice, sweet and sour.</p></div>
+      <div class="fr-cocktail"><h4>Manhattan <span>$8.50</span></h4><p>Whiskey, sweet vermouth, bitters.</p></div>
+      <div class="fr-cocktail"><h4>Old Fashioned <span>$8.50</span></h4><p>Whiskey, orange, cherry, bitters.</p></div>
+      <div class="fr-cocktail"><h4>Limoncello Martini <span>$8.50</span></h4><p>Real limoncello, vodka — our signature pour.</p></div>
+      <div class="fr-cocktail"><h4>Lemon Drop Martini <span>$8.50</span></h4><p>Vodka, triple sec, fresh lemon juice.</p></div>
+      <div class="fr-cocktail"><h4>Chocolate Martini <span>$8.50</span></h4><p>Vodka, chocolate liqueur — dessert in a glass.</p></div>
+      <div class="fr-cocktail"><h4>Bloody Mary <span>$8.50</span></h4><p>Premium vodka, tomato juice, spices.</p></div>
+    </div>
+
+    <div class="fr-section__head" style="margin-top: 72px;">
+      <span class="fr-eyebrow">Birra</span>
+      <h2>Beer</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+    </div>
+
+    <div class="fr-beer-grid">
+      <div class="fr-beer">
+        <h4>Domestic <span>$3.75</span></h4>
+        <ul>
+          <li>Bud Light</li>
+          <li>Budweiser</li>
+          <li>Coors Light</li>
+          <li>Miller Lite</li>
+          <li>Michelob Ultra</li>
+          <li>Bud Light Lime</li>
+        </ul>
+      </div>
+      <div class="fr-beer">
+        <h4>Imports &amp; Craft <span>$4.25</span></h4>
+        <ul>
+          <li>Heineken</li>
+          <li>Corona</li>
+          <li>Dos Equis</li>
+          <li>Stella Artois</li>
+          <li>Yuengling</li>
+          <li>Blue Moon</li>
+          <li>Shiner Bock</li>
+          <li>Sam Adams</li>
+          <li>Abita Amber</li>
+          <li>Peroni</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="fr-cta-band">
+  <div class="fr-container">
+    <span class="fr-eyebrow" style="color: var(--fr-gold-soft)">Salute!</span>
+    <h2>Pull Up a Stool</h2>
+    <p>The bar is a great spot to drop in for a glass of Chianti, a Limoncello martini, or a quick plate.</p>
+    <a href="tel:1-985-707-1688" class="fr-btn fr-btn--ghost">Call (985) 707-1688</a>
+  </div>
+</section>
+
+<footer class="fr-footer">
+  <div class="fr-footer__inner">
+    <div class="fr-footer__brand">
+      <a class="fr-logo" href="index.html">
+        <span class="fr-logo__name" style="color:#fff">Fratelli's</span>
+        <span class="fr-logo__tag">Italian Grille</span>
+      </a>
+      <p>Authentic Italian dining in Slidell, Louisiana since 2017. Family owned. Always fresh.</p>
+      <div class="fr-footer__social">
+        <a href="https://www.facebook.com/italiangrill2017/" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 9h2V6h-2c-1.65 0-3 1.35-3 3v1.5H9v3h1.5V21h3v-7.5h2.25L16.5 10.5h-3V9z"/></svg>
+        </a>
+        <a href="https://www.google.com/search?q=Fratelli%27s+Italian+Grille+Slidell" aria-label="Google Reviews" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://maps.google.com/?q=550+Gause+Blvd,+Slidell,+LA+70458" target="_blank" rel="noopener">550 Gause Blvd, Suite 1<br>Slidell, LA 70458</a><br>
+      <a href="tel:1-985-707-1688">(985) 707-1688</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Closed Monday</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Tue–Thu · 11am–9pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Fri–Sat · 11am–10pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Sunday · 11am–9pm</span>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="menu.html">Full Menu</a><br>
+      <a href="menu.html#catering">Catering</a><br>
+      <a href="from-the-bar.html">Wine &amp; Cocktails</a><br>
+      <a href="testimonials.html">Reviews</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="fr-footer__bottom">
+    © 2026 Fratelli's Italian Grille · Slidell, Louisiana · Locally owned and operated
+  </div>
+</footer>
+
+</body>
+</html>

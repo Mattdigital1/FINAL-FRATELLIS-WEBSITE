@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu · Fratelli's Italian Grille · Slidell, LA</title>
+<meta name="description" content="The full menu at Fratelli's Italian Grille — starters, pasta, pizza, chicken, veal, seafood, ribeye, lunch specials, desserts, and catering." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<script src="nav.js" defer></script>
+</head>
+<body>
+
+<header class="fr-header">
+  <div class="fr-header__inner">
+    <a class="fr-logo" href="index.html">
+      <span class="fr-logo__name">Fratelli's</span>
+      <span class="fr-logo__tag">Italian Grille</span>
+    </a>
+    <button class="fr-nav__toggle" aria-label="Toggle menu" onclick="document.getElementById('fr-nav').classList.toggle('is-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="fr-nav" id="fr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html" class="is-active">Menu</a>
+      <a href="from-the-bar.html">From the Bar</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="fr-nav__cta">Reserve · (985) 707-1688</a>
+    </nav>
+  </div>
+</header>
+
+<section class="fr-pagehead">
+  <span class="fr-hero__script">Il nostro menu</span>
+  <h1>Our Menu</h1>
+  <p>All meals come with garlic bread · Add a small salad to any entrée for $1.99</p>
+  <div style="margin-top: 24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <a href="https://www.doordash.com/en/store/fratellis-italian-grille-slidell-34051061/" class="fr-btn" target="_blank" rel="noopener">Order Online · DoorDash</a>
+    <a href="tel:1-985-707-1688" class="fr-btn fr-btn--ghost">Call for Pickup · (985) 707-1688</a>
+  </div>
+</section>
+
+<nav class="fr-menubar" aria-label="Menu sections">
+  <a href="#starters">Starters</a>
+  <a href="#soups">Soups &amp; Salads</a>
+  <a href="#pizza">Pizza</a>
+  <a href="#pasta">Pasta</a>
+  <a href="#subs">Hot Subs</a>
+  <a href="#baked">Baked Pasta</a>
+  <a href="#chicken">Chicken</a>
+  <a href="#veal">Veal</a>
+  <a href="#seafood">Seafood</a>
+  <a href="#ribeye">Ribeye</a>
+  <a href="#sides">Sides</a>
+  <a href="#desserts">Desserts</a>
+  <a href="#lunch">Lunch Specials</a>
+  <a href="#kids">Kids</a>
+  <a href="#drinks">Drinks</a>
+  <a href="#catering">Catering</a>
+</nav>
+
+<section class="fr-section">
+  <div class="fr-container">
+
+    <!-- STARTERS -->
+    <div class="fr-menu-group" id="starters">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Antipasti</span>
+      <h2>Starters</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <div class="fr-menu-list">
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Focaccia Bread</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$7.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Fresh tomatoes, garlic topped with fresh basil, olive oil, and mozzarella cheese.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Fried Cheese</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$8.99</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Fried Calamari</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Stuffed Mushrooms</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Stuffed with crab meat and clams, with marinara or Alfredo sauce.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Appetizer Combo</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$17.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Fried cheese, fried calamari, focaccia bread, and stuffed mushrooms.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Fratelli's Shrimp Dip</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Artichoke hearts, shrimp, spinach, garlic, and creamy Alfredo sauce, served with Fratelli's bread.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Chicken Wings</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$10.99 / $16.99</span>
+          </div>
+          <p class="fr-menu-item__sizes"><span>6 pc <strong>$10.99</strong></span><span>12 pc <strong>$16.99</strong></span></p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Mussels</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$12.99</span>
+          </div>
+          <p class="fr-menu-item__desc">With fresh basil and garlic, sautéed in a white wine chicken base and light marinara sauce.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SOUPS & SALADS -->
+    <div class="fr-menu-group" id="soups">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Zuppe &amp; Insalate</span>
+      <h2>Soups &amp; Salads</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <div class="fr-menu-list">
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Soup Fratelli's</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$8.50</span>
+          </div>
+          <p class="fr-menu-item__desc">Beans, beef, carrots, and Italian herbs in a light broth.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">House Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$5.50</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Caesar Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$8.99</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Greek Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Grilled Chicken Caesar Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$16.99</span>
+          </div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Chef Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$16.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Ham, salami, turkey, and mozzarella cheese.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Shrimp Salad</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$17.99</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="fr-menu-group" id="pizza">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Pizza</span>
+      <h2>Hand-Tossed Pizza</h2>
+      <p class="fr-menu-group__note">Available toppings: pepperoni, Canadian bacon, black olives, bell peppers, onions, jalapeños, anchovies, hamburger &amp; mushrooms.</p>
+      <div class="fr-menu-list">
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">12" Small Cheese Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$12.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Each additional topping $2.75 (no additional charge for over 4 toppings).</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">14" Medium Cheese Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Each additional topping $3.15 (no additional charge for over 4 toppings).</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">16" Large Cheese Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$15.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Each additional topping $3.55 (no additional charge for over 4 toppings).</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Supreme Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">from $16.99</span>
+          </div>
+          <p class="fr-menu-item__desc">All ingredients (jalapeños and anchovies upon request; shrimp and fresh tomato, add'l charge).</p>
+          <p class="fr-menu-item__sizes"><span>12" <strong>$16.99</strong></span><span>14" <strong>$18.99</strong></span><span>16" <strong>$21.99</strong></span></p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Chicken Alfredo Specialty Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">from $15.99</span>
+          </div>
+          <p class="fr-menu-item__sizes"><span>12" <strong>$15.99</strong></span><span>14" <strong>$17.99</strong></span><span>16" <strong>$21.99</strong></span></p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Meat Lovers Pizza</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">from $15.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Pepperoni, sausage, Canadian bacon, hamburger.</p>
+          <p class="fr-menu-item__sizes"><span>12" <strong>$15.99</strong></span><span>14" <strong>$17.99</strong></span><span>16" <strong>$19.99</strong></span></p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Calzone</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$12.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Ricotta cheese, mozzarella cheese &amp; sausage.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head">
+            <span class="fr-menu-item__name">Stromboli</span>
+            <span class="fr-menu-item__dots"></span>
+            <span class="fr-menu-item__price">$13.99</span>
+          </div>
+          <p class="fr-menu-item__desc">Pepperoni, Canadian bacon, sausage, and mozzarella cheese.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PASTA -->
+    <div class="fr-menu-group" id="pasta">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Pasta</span>
+      <h2>Pasta</h2>
+      <p class="fr-menu-group__note">Add small salad for $1.99.</p>
+      <div class="fr-menu-list">
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head"><span class="fr-menu-item__name">Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head"><span class="fr-menu-item__name">Linguini Carbonara</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$16.99</span></div>
+          <p class="fr-menu-item__desc">With ham, mushrooms, black olives, in a creamy sauce.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head"><span class="fr-menu-item__name">Spaghetti (Meat)</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div>
+          <p class="fr-menu-item__desc">With meatballs, meat sauce, or sausage.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head"><span class="fr-menu-item__name">Penne Ala Vodka</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div>
+          <p class="fr-menu-item__desc">With roasted pepper in vodka sauce. Add shrimp +$6.99 · Add chicken +$5.99.</p>
+        </div>
+
+        <div class="fr-menu-item">
+          <div class="fr-menu-item__head"><span class="fr-menu-item__name">Penne Arrabiata</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div>
+          <p class="fr-menu-item__desc">With roasted peppers, black olives, crushed red pepper in marinara sauce. Add shrimp +$6.99 · Add chicken +$5.99.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HOT SUBS -->
+    <div class="fr-menu-group" id="subs">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Panini</span>
+      <h2>Hot Subs</h2>
+      <p class="fr-menu-group__note">All subs served with our delicious fries. Add small salad for $1.99.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Meatball Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Eggplant Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Philadelphia Special Cheese Steak</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- BAKED PASTA -->
+    <div class="fr-menu-group" id="baked">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Al Forno</span>
+      <h2>Baked Pasta</h2>
+      <p class="fr-menu-group__note">Add a small salad for $1.99.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Baked Ziti</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div><p class="fr-menu-item__desc">Ziti pasta with ricotta cheese, marinara sauce, topped with mozzarella.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Cannelloni</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div><p class="fr-menu-item__desc">Meat, cheese, and spinach.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Eggplant Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div><p class="fr-menu-item__desc">Eggplant topped with mozzarella &amp; marinara, with spaghetti.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Lasagna</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div><p class="fr-menu-item__desc">With ground beef and melted mozzarella cheese.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Manicotti</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div><p class="fr-menu-item__desc">Shells filled with ricotta, mozzarella &amp; Parmesan cheese.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Cheese Ravioli</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div><p class="fr-menu-item__desc">Ravioli filled with ricotta &amp; Parmesan, marinara, topped with mozzarella.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Combo Dish</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$16.99</span></div><p class="fr-menu-item__desc">Lasagna, manicotti, cannelloni.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Tortellini Ala Forno</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$16.99</span></div><p class="fr-menu-item__desc">Sautéed ham, mushrooms, meat sauce, creamy sauce, topped with mozzarella.</p></div>
+      </div>
+    </div>
+
+    <!-- CHICKEN -->
+    <div class="fr-menu-group" id="chicken">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Pollo</span>
+      <h2>Chicken</h2>
+      <p class="fr-menu-group__note">Chicken entrées served with pasta of choice (excluding chicken fettuccine) — spaghetti, angel hair, or ziti and garlic bread. Add a small salad for $1.99 · Add shrimp for $5.99.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Madomia</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Fresh tomatoes, spinach, broccoli, garlic, chicken base and creamy Alfredo sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Marsala</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken sautéed with mushrooms in a marsala wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken della Casa</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken sautéed with spinach, onion and mushrooms in a cream wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Aristocrat</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken and eggplant sautéed in creamy sherry wine sauce with a light touch of marinara.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Cacciatore</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken with mushrooms, red peppers, onions, and shallots in a marinara sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Diana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken sautéed with artichoke hearts and mushrooms in a sherry pink wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Fettuccine pasta with chicken &amp; creamy sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Piccata</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Chicken sautéed with capers and lemon in a white wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Breaded chicken in marinara sauce, topped with mozzarella.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Primavera</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$19.99</span></div><p class="fr-menu-item__desc">Sautéed chicken breasts with mushrooms, squash, zucchini and bell peppers in a pink sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Italian Sampler</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$20.99</span></div><p class="fr-menu-item__desc">Chicken parmesan, lasagna, and fettuccine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Grilled Chicken &amp; Vegetables</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$17.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- VEAL -->
+    <div class="fr-menu-group" id="veal">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Vitello</span>
+      <h2>Veal</h2>
+      <p class="fr-menu-group__note">Served with pasta of your choice — spaghetti, angel hair, or ziti, with garlic bread. Add a small salad for $1.99.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Veal Piccata</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$22.99</span></div><p class="fr-menu-item__desc">Veal scallopini sautéed with capers and lemon in a white wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Veal Marsala</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$22.99</span></div><p class="fr-menu-item__desc">Veal scallopini with mushrooms in a marsala wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Veal Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$22.99</span></div><p class="fr-menu-item__desc">Veal scallopini breaded in marinara, topped with mozzarella.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Veal &amp; Shrimp Ala Cream</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$26.99</span></div><p class="fr-menu-item__desc">Veal scallopini and shrimp with artichoke hearts in a creamy dill brandy sauce and mushrooms.</p></div>
+      </div>
+    </div>
+
+    <!-- SEAFOOD -->
+    <div class="fr-menu-group" id="seafood">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Frutti di Mare</span>
+      <h2>Seafood</h2>
+      <p class="fr-menu-group__note">Substitute marinara for Alfredo sauce for $2.15 · Add small salad for $1.99.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Scampi Alla Palermo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$21.99</span></div><p class="fr-menu-item__desc">Shrimp with butter, lemon, white wine sauce, garlic &amp; fresh tomatoes over angel hair.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Shrimp Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$21.99</span></div><p class="fr-menu-item__desc">Shrimp with creamy wine sauce over fettuccine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Shrimp Tortellini</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$21.99</span></div><p class="fr-menu-item__desc">Homemade tortellini, garlic butter, sautéed in sherry wine and pink sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Shrimp Ravioli</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$21.99</span></div><p class="fr-menu-item__desc">Homemade ravioli, garlic butter, sherry wine &amp; pink sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Lobster Ravioli</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$23.99</span></div><p class="fr-menu-item__desc">Lobster and ricotta filled shells, topped with shrimp &amp; tomatoes in garlic cream sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Linguine &amp; Clams</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$18.99</span></div><p class="fr-menu-item__desc">Linguine with lemon juice, fresh garlic &amp; basil, light red or white clam sauce (no cream).</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Mixed Seafood Tuttomare</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$32.99</span></div><p class="fr-menu-item__desc">Salmon, shrimp, mussels, scallops and clams in white wine and marinara over linguine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Sicilian Marsala</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$26.99</span></div><p class="fr-menu-item__desc">Veal scallopini, shrimp, mushrooms, garlic, butter, sautéed in marsala wine sauce over pasta.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Seafood Combo #1</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$23.99</span></div><p class="fr-menu-item__desc">Fresh shrimp, clams, mussels in a white wine sauce over angel hair.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Seafood Combo #2</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$24.99</span></div><p class="fr-menu-item__desc">Clams, shrimp, mussels in a light marinara sauce over linguine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Seafood Combo #3</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$25.99</span></div><p class="fr-menu-item__desc">Clams, shrimp, mussels in a cream sauce over fettuccine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Salmon Piccata</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$24.99</span></div><p class="fr-menu-item__desc">Grilled salmon sautéed with capers, lemon, spinach, and angel hair in a white wine sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Crawfish &amp; Shrimp Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$24.99</span></div><p class="fr-menu-item__desc">Sautéed with fresh basil, garlic, and herbs, with fettuccine and Alfredo sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Sardinia Lobster</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$49.99 MP</span></div><p class="fr-menu-item__desc">10 oz lobster tail, clams, mussels, garlic, olive oil, lemon sauce, with steamed vegetables.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Fradiavlo Lobster</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$49.99 MP</span></div><p class="fr-menu-item__desc">10 oz lobster tail with shrimp, basil, garlic &amp; butter in fradiavlo sauce over linguine.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken &amp; Shrimp Fradiavlo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$22.99</span></div><p class="fr-menu-item__desc">Chicken &amp; shrimp with basil, garlic, white wine chicken base, light spicy marinara.</p></div>
+      </div>
+    </div>
+
+    <!-- RIBEYE -->
+    <div class="fr-menu-group" id="ribeye">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Bistecca</span>
+      <h2>Ribeye</h2>
+      <p class="fr-menu-group__note">Includes small salad.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Ribeye Steak</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$35.99</span></div><p class="fr-menu-item__desc">Grilled 16 oz ribeye with vegetables or fries.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Ribeye Biancanieve</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$37.99</span></div><p class="fr-menu-item__desc">Grilled 16 oz ribeye sautéed with mushrooms in a brandy cream sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Ribeye Marsala</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$37.99</span></div><p class="fr-menu-item__desc">Grilled 16 oz ribeye with mushrooms in a marsala sauce.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Ribeye Giambota</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$37.99</span></div><p class="fr-menu-item__desc">Grilled 16 oz ribeye sautéed with mushrooms, onions, roasted red peppers in marsala sauce.</p></div>
+      </div>
+    </div>
+
+    <!-- SIDES -->
+    <div class="fr-menu-group" id="sides">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Contorni</span>
+      <h2>Side Dishes</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Alfredo Sauce</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Marinara</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$2.25</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Dipping Oil</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$3.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Meatball</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Sausage</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Side Vegetables</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$7.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="fr-menu-group" id="desserts">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Dolci</span>
+      <h2>Desserts</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Cheesecake</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$5.99</span></div><p class="fr-menu-item__desc">Strawberry, chocolate, or plain.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Cannoli</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Tiramisu</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Italian Cream Cake</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Limoncello Cake</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$6.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- LUNCH SPECIALS -->
+    <div class="fr-menu-group" id="lunch">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Pranzo</span>
+      <h2>Lunch Specials</h2>
+      <p class="fr-menu-group__note">Tuesday–Friday 11:00 AM – 2:00 PM · Includes house salad &amp; garlic bread.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Lasagna</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Manicotti</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Cannelloni</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$12.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Eggplant Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$13.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Parmigiana</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$14.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Florentine</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$15.99</span></div><p class="fr-menu-item__desc">Sautéed chicken with spinach, garlic, onions in a white wine &amp; Alfredo sauce.</p></div>
+      </div>
+    </div>
+
+    <!-- KID'S -->
+    <div class="fr-menu-group" id="kids">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Bambini</span>
+      <h2>Kid's Plate</h2>
+      <p class="fr-menu-group__note">For children 8 and under, please.</p>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Lasagna</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Manicotti</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Spaghetti (Meat)</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div><p class="fr-menu-item__desc">With meatball, meat sauce, or sausage.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Spaghetti (Butter &amp; Parm)</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$7.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Chicken Fettuccine Alfredo</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$10.99</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Grilled Chicken &amp; Fries</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$8.99</span></div></div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="fr-menu-group" id="drinks">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Bevande</span>
+      <h2>Drinks</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+      <div class="fr-menu-list">
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Soft Drinks</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$3.75</span></div><p class="fr-menu-item__desc">Coke, Diet Coke, Diet Dr. Pepper and more.</p></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Iced Tea</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$3.75</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Coffee</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$3.75</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Sparkling Water (bottle)</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$3.75</span></div></div>
+        <div class="fr-menu-item"><div class="fr-menu-item__head"><span class="fr-menu-item__name">Dasani Water (bottle)</span><span class="fr-menu-item__dots"></span><span class="fr-menu-item__price">$2.75</span></div></div>
+      </div>
+    </div>
+
+    <!-- CATERING -->
+    <div class="fr-menu-group" id="catering">
+      <span class="fr-eyebrow" style="display:block; text-align:center;">Catering</span>
+      <h2>Catering Menu</h2>
+      <p class="fr-menu-group__note">Fratelli's caters weddings, graduations, office lunches, holiday parties, and family gatherings across St. Tammany Parish. Call us at (985) 707-1688 to build a custom menu for your event — we'll make it easy and delicious.</p>
+
+      <div style="text-align:center; background:#fff; border:1px solid var(--fr-line); border-radius:10px; padding:36px 28px; margin: 24px auto; max-width: 720px; box-shadow: var(--fr-shadow);">
+        <h3 style="margin-top:0;">Build Your Event Menu</h3>
+        <p style="color:var(--fr-ink-soft);">Choose from any of our pastas, chicken, veal, seafood, pizza and salad offerings — priced per tray, half-tray, or full tray. We deliver locally with advance notice.</p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px;">
+          <a href="tel:1-985-707-1688" class="fr-btn">Call to Plan Your Event</a>
+          <a href="contact.html" class="fr-btn fr-btn--outline">Send a Message</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="fr-cta-band">
+  <div class="fr-container">
+    <span class="fr-eyebrow" style="color: var(--fr-gold-soft)">Ready to Order?</span>
+    <h2>Join Us Tonight</h2>
+    <p>Reservations are by phone. Tell us how many and what time — we'll handle the rest.</p>
+    <a href="tel:1-985-707-1688" class="fr-btn fr-btn--ghost">Call (985) 707-1688</a>
+  </div>
+</section>
+
+<footer class="fr-footer">
+  <div class="fr-footer__inner">
+    <div class="fr-footer__brand">
+      <a class="fr-logo" href="index.html">
+        <span class="fr-logo__name" style="color:#fff">Fratelli's</span>
+        <span class="fr-logo__tag">Italian Grille</span>
+      </a>
+      <p>Authentic Italian dining in Slidell, Louisiana since 2017. Family owned. Always fresh.</p>
+      <div class="fr-footer__social">
+        <a href="https://www.facebook.com/italiangrill2017/" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 9h2V6h-2c-1.65 0-3 1.35-3 3v1.5H9v3h1.5V21h3v-7.5h2.25L16.5 10.5h-3V9z"/></svg>
+        </a>
+        <a href="https://www.google.com/search?q=Fratelli%27s+Italian+Grille+Slidell" aria-label="Google Reviews" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://maps.google.com/?q=550+Gause+Blvd,+Slidell,+LA+70458" target="_blank" rel="noopener">550 Gause Blvd, Suite 1<br>Slidell, LA 70458</a><br>
+      <a href="tel:1-985-707-1688">(985) 707-1688</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Closed Monday</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Tue–Thu · 11am–9pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Fri–Sat · 11am–10pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Sunday · 11am–9pm</span>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="menu.html">Full Menu</a><br>
+      <a href="menu.html#catering">Catering</a><br>
+      <a href="from-the-bar.html">Wine &amp; Cocktails</a><br>
+      <a href="testimonials.html">Reviews</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="fr-footer__bottom">
+    © 2026 Fratelli's Italian Grille · Slidell, Louisiana · Locally owned and operated
+  </div>
+</footer>
+
+</body>
+</html>

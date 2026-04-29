@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact &amp; Reservations · Fratelli's Italian Grille · Slidell, LA</title>
+<meta name="description" content="Reservations, hours, directions, and contact information for Fratelli's Italian Grille in Slidell, Louisiana. Call (985) 707-1688." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<script src="nav.js" defer></script>
+</head>
+<body>
+
+<header class="fr-header">
+  <div class="fr-header__inner">
+    <a class="fr-logo" href="index.html">
+      <span class="fr-logo__name">Fratelli's</span>
+      <span class="fr-logo__tag">Italian Grille</span>
+    </a>
+    <button class="fr-nav__toggle" aria-label="Toggle menu" onclick="document.getElementById('fr-nav').classList.toggle('is-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="fr-nav" id="fr-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="from-the-bar.html">From the Bar</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="fr-nav__cta is-active">Reserve · (985) 707-1688</a>
+    </nav>
+  </div>
+</header>
+
+<section class="fr-pagehead">
+  <span class="fr-hero__script">Contattaci</span>
+  <h1>Visit &amp; Reserve</h1>
+  <p>We'd love to save you a table. Reservations are by phone — call ahead and we'll take care of the rest.</p>
+</section>
+
+<section class="fr-section">
+  <div class="fr-container">
+    <div class="fr-contact-grid">
+
+      <!-- INFO COLUMN -->
+      <div>
+        <div class="fr-info-card">
+          <span class="fr-eyebrow">Find Us</span>
+          <h3>Fratelli's Italian Grille</h3>
+          <p><a href="https://maps.google.com/?q=550+Gause+Blvd,+Slidell,+LA+70458" target="_blank" rel="noopener">550 Gause Blvd, Suite 1<br>Slidell, LA 70458</a></p>
+
+          <dl>
+            <dt>Call for Reservations</dt>
+            <dd><a href="tel:1-985-707-1688"><strong>(985) 707-1688</strong></a></dd>
+
+            <dt>Hours</dt>
+            <dd>
+              <div class="fr-hours-row"><span>Monday</span><span>Closed</span></div>
+              <div class="fr-hours-row"><span>Tuesday</span><span>11:00 AM – 9:00 PM</span></div>
+              <div class="fr-hours-row"><span>Wednesday</span><span>11:00 AM – 9:00 PM</span></div>
+              <div class="fr-hours-row"><span>Thursday</span><span>11:00 AM – 9:00 PM</span></div>
+              <div class="fr-hours-row"><span>Friday</span><span>11:00 AM – 10:00 PM</span></div>
+              <div class="fr-hours-row"><span>Saturday</span><span>11:00 AM – 10:00 PM</span></div>
+              <div class="fr-hours-row"><span>Sunday</span><span>11:00 AM – 9:00 PM</span></div>
+            </dd>
+
+            <dt>Follow Along</dt>
+            <dd>
+              <a href="https://www.facebook.com/italiangrill2017/" target="_blank" rel="noopener">Facebook</a>
+              &nbsp;·&nbsp;
+              <a href="https://www.google.com/search?q=Fratelli%27s+Italian+Grille+Slidell" target="_blank" rel="noopener">Google</a>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="fr-map" style="margin-top: 24px;">
+          <iframe
+            title="Map to Fratelli's Italian Grille"
+            src="https://www.google.com/maps?q=550+Gause+Blvd,+Slidell,+LA+70458&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- FORM COLUMN -->
+      <div>
+        <div class="fr-info-card">
+          <span class="fr-eyebrow">Send a Message</span>
+          <h3>Questions, Catering, or Private Events?</h3>
+          <p class="fr-form__note">For <strong>reservations</strong>, please call (985) 707-1688 — we don't accept reservations by email. For catering inquiries and general questions, use the form below.</p>
+
+          <form class="fr-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thanks! We\\'ll be in touch soon.');">
+            <div>
+              <label for="fr-name">Your Name</label>
+              <input id="fr-name" name="name" type="text" required placeholder="Maria Rossi" />
+            </div>
+            <div>
+              <label for="fr-email">Email</label>
+              <input id="fr-email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="fr-phone">Phone (optional)</label>
+              <input id="fr-phone" name="phone" type="tel" placeholder="(985) 555-0100" />
+            </div>
+            <div>
+              <label for="fr-topic">Topic</label>
+              <input id="fr-topic" name="topic" type="text" placeholder="Catering · Private dining · Feedback · Other" />
+            </div>
+            <div>
+              <label for="fr-message">Message</label>
+              <textarea id="fr-message" name="message" required placeholder="Tell us a little about what you're planning or what you need."></textarea>
+            </div>
+            <button type="submit" class="fr-btn" style="justify-self:start;">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="fr-section fr-section--alt">
+  <div class="fr-container">
+    <div class="fr-section__head">
+      <span class="fr-eyebrow">Good to Know</span>
+      <h2>Planning Your Visit</h2>
+      <div class="fr-divider"><span class="fr-divider-dot"></span></div>
+    </div>
+    <div class="fr-features">
+      <div class="fr-feature">
+        <div class="fr-feature__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Reservations</h3>
+        <p>By phone only. Call ahead for parties of 6+, Friday/Saturday nights, and private events.</p>
+      </div>
+      <div class="fr-feature">
+        <div class="fr-feature__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+        </div>
+        <h3>Parking</h3>
+        <p>Free parking on-site. Plenty of room even on the busiest weekend nights.</p>
+      </div>
+      <div class="fr-feature">
+        <div class="fr-feature__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M9 22V12a3 3 0 0 1 6 0v10"/><circle cx="6" cy="9" r="2"/><path d="M4 22v-4a2 2 0 0 1 4 0v4"/><circle cx="18" cy="9" r="2"/><path d="M16 22v-4a2 2 0 0 1 4 0v4"/></svg>
+        </div>
+        <h3>Family Friendly</h3>
+        <p>Kid's menu available. High chairs and boosters on hand. Bring the whole famiglia.</p>
+      </div>
+      <div class="fr-feature">
+        <div class="fr-feature__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3>Order Online &amp; Pickup</h3>
+        <p>Full menu available to-go via DoorDash. Catering trays for events of all sizes — give us a day's notice.</p>
+        <a href="https://www.doordash.com/en/store/fratellis-italian-grille-slidell-34051061/" class="fr-btn" target="_blank" rel="noopener" style="margin-top: 14px; font-size: 12px; padding: 10px 18px;">Order on DoorDash</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fr-cta-band">
+  <div class="fr-container">
+    <span class="fr-eyebrow" style="color: var(--fr-gold-soft)">A Presto</span>
+    <h2>We'll See You Soon</h2>
+    <p>Mille grazie — we can't wait to welcome you to Fratelli's.</p>
+    <a href="tel:1-985-707-1688" class="fr-btn fr-btn--ghost">Call (985) 707-1688</a>
+  </div>
+</section>
+
+<footer class="fr-footer">
+  <div class="fr-footer__inner">
+    <div class="fr-footer__brand">
+      <a class="fr-logo" href="index.html">
+        <span class="fr-logo__name" style="color:#fff">Fratelli's</span>
+        <span class="fr-logo__tag">Italian Grille</span>
+      </a>
+      <p>Authentic Italian dining in Slidell, Louisiana since 2017. Family owned. Always fresh.</p>
+      <div class="fr-footer__social">
+        <a href="https://www.facebook.com/italiangrill2017/" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 9h2V6h-2c-1.65 0-3 1.35-3 3v1.5H9v3h1.5V21h3v-7.5h2.25L16.5 10.5h-3V9z"/></svg>
+        </a>
+        <a href="https://www.google.com/search?q=Fratelli%27s+Italian+Grille+Slidell" aria-label="Google Reviews" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://maps.google.com/?q=550+Gause+Blvd,+Slidell,+LA+70458" target="_blank" rel="noopener">550 Gause Blvd, Suite 1<br>Slidell, LA 70458</a><br>
+      <a href="tel:1-985-707-1688">(985) 707-1688</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Closed Monday</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Tue–Thu · 11am–9pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Fri–Sat · 11am–10pm</span>
+      <span style="display:block; color:rgba(255,255,255,.75); font-size:14.5px; padding:3px 0;">Sunday · 11am–9pm</span>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="menu.html">Full Menu</a><br>
+      <a href="menu.html#catering">Catering</a><br>
+      <a href="from-the-bar.html">Wine &amp; Cocktails</a><br>
+      <a href="testimonials.html">Reviews</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="fr-footer__bottom">
+    © 2026 Fratelli's Italian Grille · Slidell, Louisiana · Locally owned and operated
+  </div>
+</footer>
+
+</body>
+</html>
